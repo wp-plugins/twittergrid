@@ -4,7 +4,7 @@ Plugin Name: TwitterGrid
 Plugin URI: http://www.tom-hengst.de/wordpress-plugins
 Description: Displays the Twitter-Images of all your friends as a mosaic in the sidebar of your blog. Check out more <a href="http://www.tom-hengst.de/wordpress-plugins">Wordpress Plugins</a> by <a href="http://www.tom-hengst.de">Tom</a>.
 Version: 0.1
-Author: Tom Hengst
+Author: tom
 Author URI: http://www.tom-hengst.de
 */
 
