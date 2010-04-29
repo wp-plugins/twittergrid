@@ -4,7 +4,7 @@ Donate link: http://www.tom-hengst.de/donate
 Tags: wordpress, twitter, tweets, twit, follower, friends, badge, widget, widgets, sidebar, visits, visitors, admin, plugin, links, page, images, blogging, microblogging
 Requires at least: 2.0.2
 Tested up to: 2.7
-Stable tag: 0.1
+Stable tag: 0.2
 
 Displays the Twitter-Images of all your friends as a mosaic in the sidebar of your blog. The plugin is widget ready and comes with many configuration options!
 
@@ -35,5 +35,6 @@ Because for this method call we have to use OAuth - it's a bit complecated so pl
 
 == Change Log ==
 
+* v0.2 29.04.2010 minor xhtml fixes
 * v0.1 07.07.2009 initial release
 

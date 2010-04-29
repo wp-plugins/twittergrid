@@ -3,12 +3,13 @@
 Plugin Name: TwitterGrid
 Plugin URI: http://www.tom-hengst.de/wordpress-plugins
 Description: Displays the Twitter-Images of all your friends as a mosaic in the sidebar of your blog. Check out more <a href="http://www.tom-hengst.de/wordpress-plugins">Wordpress Plugins</a> by <a href="http://www.tom-hengst.de">Tom</a>.
-Version: 0.1
+Version: 0.2
 Author: tom
 Author URI: http://www.tom-hengst.de
 */
 
 /**
+ * v0.2 29.04.2010 minor xhtml fixes
  * v0.1 07.07.2009 initial release
  */
 class TwitterGrid {
@@ -25,7 +26,7 @@ class TwitterGrid {
   function TwitterGrid() {
     $this->id         = 'twittergrid';
     $this->title      = 'TwitterGrid';
-    $this->version    = '0.1';
+    $this->version    = '0.2';
     $this->plugin_url = 'http://www.tom-hengst.de/wordpress-plugins';
     $this->name       = 'TwitterGrid v'. $this->version;
     $this->url        = get_bloginfo('wpurl'). '/wp-content/plugins/' . $this->id;
@@ -301,7 +302,7 @@ class TwitterGrid {
         $data .= $item;
       }
 
-      $data = '<div id="twittergrid">'. $data . (intval($this->options['show_twitter_link'])==1?'<strong><a href="http://twitter.com/'.$this->options['username'].'" rel="nofollow" target="_blank">'.__('Follow me!', $this->id).'</a></strong>':'').'<div><a href="http://www.tom-hengst.de/wordpress-plugins" target="_blank" class="snap_noshots">TwitterGrid</a> by <a href="http://www.tom-hengst.de" target="_blank" class="snap_noshots">Tom</a></div></div>';
+      $data = '<div id="twittergrid">'. $data . (intval($this->options['show_twitter_link'])==1?'<strong><a href="http://twitter.com/'.$this->options['username'].'" rel="nofollow" target="_blank">'.__('Follow me!', $this->id).'</a></strong>':'').'<div>TwitterGrid by <a href="http://www.tom-hengst.de" target="_blank" class="snap_noshots">Tom</a></div></div>';
 
       if(is_writeable($this->path. '/cache')) {
         file_put_contents($this->cache_file, $data);
