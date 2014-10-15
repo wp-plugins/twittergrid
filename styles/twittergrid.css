@@ -1,0 +1,75 @@
+/**
+ * twittergrid wrapper
+ *
+ * IMPORTANT: Do NOT add _width_ or _height_ here, there defined dynmically by the plugin!
+ */
+#twittergrid {
+  border: 0;
+  border: 0;
+  padding: 0;
+  text-align: center;
+  width: 150px;
+}
+/**
+ * follow me button
+ */
+#twittergrid strong {
+  display: block;
+  padding: 5px 0 5px 0;
+}
+#twittergrid strong a {
+  background: #fff url(../img/twitter.gif) left no-repeat;
+  padding-left: 24px !important;
+  font-family: Arial;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #666;
+  font-weight: bold;
+  font-size: 16px;
+}
+/**
+ * twittergrid links
+ */
+#twittergrid a:link, #twittergrid a:active, #twittergrid a:visited, #twittergrid a:hover {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+/**
+ * twittergrid images inside of links
+ */
+#twittergrid img, #twittergrid a:link img, #twittergrid a:active img, #twittergrid a:visited img {
+  border: 0;
+  padding: 1px;
+  margin: 0;
+  opacity: .75;
+  filter: alpha(opacity=75);
+}
+/**
+ * twittergrid images:hover
+ */
+div#twittergrid a:hover img {
+  border: 1px solid #ABADB3;
+  padding: 0px;
+  margin: 0;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+/**
+ * twittergrid footer
+ */
+#twittergrid div {
+  text-decoration: underline;
+}
+#twittergrid div, #twittergrid div a:link, #twittergrid div a:active, #twittergrid div a:visited, #twittergrid div a:hover {
+  background: none !important;
+  color: #aaa;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 9px;
+}
