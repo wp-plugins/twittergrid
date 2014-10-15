@@ -1,16 +1,17 @@
 <?php
 /*
 Plugin Name: TwitterGrid
-Plugin URI: http://www.tom-hengst.de/wordpress-plugins
-Description: Displays the Twitter-Images of all your friends as a mosaic in the sidebar of your blog. Check out more <a href="http://www.tom-hengst.de/wordpress-plugins">Wordpress Plugins</a> by <a href="http://www.tom-hengst.de">Tom</a>.
-Version: 0.2
+Plugin URI: https://wordpress.org/plugins/twittergrid/
+Description: Displays the Twitter-Images of all your friends as a mosaic in the sidebar of your blog.
+Version: 0.3
 Author: tom
-Author URI: http://www.tom-hengst.de
+Author URI: https://profiles.wordpress.org/tomknows/
 */
 
 /**
- * v0.2 29.04.2010 minor xhtml fixes
- * v0.1 07.07.2009 initial release
+ * v0.3 2014-10-15 frozen because ot twitter api changes
+ * v0.2 2010-04-29 minor xhtml fixes
+ * v0.1 2009-07-07 initial release
  */
 class TwitterGrid {
   var $id;
@@ -26,8 +27,8 @@ class TwitterGrid {
   function TwitterGrid() {
     $this->id         = 'twittergrid';
     $this->title      = 'TwitterGrid';
-    $this->version    = '0.2';
-    $this->plugin_url = 'http://www.tom-hengst.de/wordpress-plugins';
+    $this->version    = '0.3';
+    $this->plugin_url = 'https://wordpress.org/plugins/twittergrid/';
     $this->name       = 'TwitterGrid v'. $this->version;
     $this->url        = get_bloginfo('wpurl'). '/wp-content/plugins/' . $this->id;
 
@@ -237,7 +238,7 @@ class TwitterGrid {
     /**
      * not the best way, but we can't assume that every webhost simplexml installed
      */
-    if(@$Snoopy->fetch('http://twitter.com/statuses/friends/' . $user . '.xml')) {
+    if($Snoopy->fetch('http://twitter.com/statuses/friends/' . $user . '.xml')) {
       if(!empty($Snoopy->results)) {
         if(preg_match_all('/<user>(.*?)<\/user>/s', $Snoopy->results, $matches)) {
           $result = array();
@@ -302,7 +303,7 @@ class TwitterGrid {
         $data .= $item;
       }
 
-      $data = '<div id="twittergrid">'. $data . (intval($this->options['show_twitter_link'])==1?'<strong><a href="http://twitter.com/'.$this->options['username'].'" rel="nofollow" target="_blank">'.__('Follow me!', $this->id).'</a></strong>':'').'<div>TwitterGrid by <a href="http://www.tom-hengst.de" target="_blank" class="snap_noshots">Tom</a></div></div>';
+      $data = '<div id="twittergrid">'. $data . (intval($this->options['show_twitter_link'])==1?'<strong><a href="http://twitter.com/'.$this->options['username'].'" rel="nofollow" target="_blank">'.__('Follow me!', $this->id).'</a></strong>':'').'<div>TwitterGrid by <a href="https://profiles.wordpress.org/tomknows/" target="_blank" class="snap_noshots">Tom</a></div></div>';
 
       if(is_writeable($this->path. '/cache')) {
         file_put_contents($this->cache_file, $data);

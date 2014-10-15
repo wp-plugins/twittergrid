@@ -1,18 +1,15 @@
 === TwitterGrid ===
 Contributors: tomknows
-Donate link: http://www.tom-hengst.de/donate
 Tags: wordpress, twitter, tweets, twit, follower, friends, badge, widget, widgets, sidebar, visits, visitors, admin, plugin, links, page, images, blogging, microblogging
 Requires at least: 2.0.2
-Tested up to: 2.7
-Stable tag: 0.2
+Tested up to: 4.0
+Stable tag: 0.3
 
 Displays the Twitter-Images of all your friends as a mosaic in the sidebar of your blog. The plugin is widget ready and comes with many configuration options!
 
 == Description ==
 
 Displays the Twitter-Images of all your friends as a mosaic in the sidebar of your blog. The plugin is widget ready and comes with many configuration options!
-
-Check out more [Wordpress Plugins](http://www.tom-hengst.de/wordpress-plugins "Wordpress Plugins") brought to you by [Tom](http://www.tom-hengst.de "Tom").
 
 == Installation ==
 
@@ -35,6 +32,6 @@ Because for this method call we have to use OAuth - it's a bit complecated so pl
 
 == Change Log ==
 
-* v0.2 29.04.2010 minor xhtml fixes
-* v0.1 07.07.2009 initial release
-
+* v0.3 2014-10-15 frozen because ot twitter api changes
+* v0.2 2010-04-29 minor xhtml fixes
+* v0.1 2009-07-07 initial release
