@@ -5,7 +5,7 @@ Requires at least: 2.0.2
 Tested up to: 4.0
 Stable tag: 0.3
 
-Displays the Twitter-Images of all your friends as a mosaic in the sidebar of your blog. The plugin is widget ready and comes with many configuration options!
+Displays the Twitter-Images of all your friends as a mosaic in the sidebar of your blog. The plugin is widget ready and comes with many configuration options.
 
 == Description ==
 
